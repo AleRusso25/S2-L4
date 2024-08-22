@@ -42,7 +42,7 @@ console.log (crazyDiff(num2))
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
-let n = 4
+let n = 400
 function boundary (n) {
     return (n>20 && n<=100 || n===400 )
 }
@@ -85,16 +85,17 @@ console.log (check3and7(num))
 
 let strin = "EPICODE"
 function reverseString (strin) {
-    return strin.split.revers().join
+    return strin.split ("").reverse("").join("")
 }
-jconsol.log (reverseString(strin))
+
+console.log(reverseString(strin))
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 function upperFirst (stringa) {
-    return stringa.char.toUpperCasa
+    return stringa.replace (|/b/w/g, )
 }
 
 /* ESERCIZIO 9
@@ -102,13 +103,20 @@ function upperFirst (stringa) {
  della stringa originale.
 */
 
-function cutString (stringa) {
+function cutString (str) {
+    return str.slice(1,-1)
 
 }
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
-function giveMeRandom (n) {
+let randomNumber =[]
 
+function giveMeRandom (n) {
+ 
+    for (let i > 0; i < n ; i++){
+        randomNumber.push(Math.floor(Math.random()*11))
+    }
+return randomNumber
 }
